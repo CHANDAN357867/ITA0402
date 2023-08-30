@@ -1,0 +1,11 @@
+input_string <- "abcdefghijklmnopqrstuvwxyz"
+
+first_10_lower <- substr(input_string, 1, 10)
+
+last_10_upper <- toupper(substr(input_string, nchar(input_string) - 9, nchar(input_string)))
+
+letters_22_to_24_upper <- toupper(substr(input_string, 22, 24))
+
+cat("First 10 letters in lower case:", first_10_lower, "\n")
+cat("Last 10 letters in upper case:", last_10_upper, "\n")
+cat("Letters between 22nd and 24th in upper case:", letters_22_to_24_upper, "\n")
